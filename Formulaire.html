@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulaire</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+</header>
+				<!-- Menu de Naviguation -->
+<div id="nav">
+	<ul>
+	<li><a href="index.html">Accueil</a></li>
+	<li><a href="medias/Media.html">Médias</a></li>
+	<ul>
+	<li><a href="medias/Livres.html">Livres</a></li>
+	<li><a href="medias/Films.html">Films</a></li>
+	</ul>
+	<li><a href="univers/Univers.html">Univers</a></li>
+	<ul>
+		<li><a href="univers/Personnage.html">Personnages</a></li>		
+		<li><a href="univers/Poudlard.html">Poudlard</a></li>
+	</ul>
+	<li><a href="Formulaire.html">Avis</a></li>
+	<li><a href="Credits.html">Credits</a></li>
+	</ul>
+</div>
+
+<div id="contenu">
+	<p>Ce sondage a pour unique but d'ameliorer l'experience de l'utilisateur, et les informations ne seront pas transmises à un quelconque tiers.</p>
+		<!-- La technologie php n'est pas utilisé,
+		c'est simplement pour reserver la place de l'attribut action-->
+		<form method="post" action="formulaire.php">
+		<fieldset>
+			<legend>Votre identité</legend>
+			<label for="identifiant">Votre Identifiant :</label><input type="text" id="identifiant"><br>
+			<label for="email">Votre Adresse Electronique :</label><input type="email" id="identifiant" name="email"><br>
+		</fieldset>
+		<fieldset>
+			<legend>Aidez-nous a ameliorer notre Site</legend>
+			<label for="provenence">Comment avez-vous entendu parler de notre Site ?</label>
+			<br>
+			<textarea name="provenence" id="provenence" rows="5" cols="30"> </textarea> <br>
+			<p>Sur une echelle de 0 à 10, quelle est la probabilité que vous recommendiez notre Site à une autre personne ?</p>
+			<input type="range" list="val" value="5" max="10" min="0" step="1"> <br>
+			<datalist id="val">
+			<!--Malheureusement le label ne s'affiche pas sur certains navigateurs-->
+			<option value="0" label="0"></option>
+			<option value="1"></option>
+			<option value="2"></option>
+			<option value="3"></option>
+			<option value="4"></option>
+			<option value="5" label="5"></option>
+			<option value="6"></option>
+			<option value="7"></option>
+			<option value="8"></option>
+			<option value="9"></option>
+			<option value="10" label="10"></option>
+			</datalist>
+			<br>
+			A quelle fréquence utilisez-vous ce Site :
+			<br>
+			<input type="radio" name="frq" value="texte">Jamais<br>
+			<input type="radio" name="frq" value="texte">Rarement<br>
+			<input type="radio" name="frq" value="texte">Souvent<br>
+			<input type="radio" name="frq" value="texte">Tous les jours
+			<br>
+		</fieldset>
+		<br><input type="reset" value="Remettre à zéro"> <input type="submit" value="Soumettre">
+	
+		</form>
+</div>
+</body>
+</html>

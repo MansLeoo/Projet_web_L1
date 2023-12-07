@@ -1,0 +1,240 @@
+
+/**Mise en place du style de page commun**/
+
+
+header{ /** Mise en place du "haut de page" ici la bannière du site **/
+
+	background-image:url(Image/banner.png);
+	height: 250px;
+	margin-left: 3%;
+	margin-right: 3%;
+	border-style: solid ;
+	border-color: gold;
+	border-width: 1px;
+}
+body
+{
+	background-color: #3B3939 ;
+}
+#nav /** CSS agissant sur le menu de naviguation **/
+{
+	background-color: #4C4949 ; 
+	color: white;
+	display: block;
+	font-size: 30px;
+	border-width: 4px;
+	position: relative;
+	width: 8%;
+	height: 35%;
+	margin-left: 3%;
+	z-index: 1;
+	padding-right: 8%;
+	line-height: 45px;
+	border-style: solid;
+	border-color: goldenrod;
+	margin-top: 2.3%;
+	border-width: 1px;
+}
+a
+{
+
+	color: gold;
+
+}
+.lst_nav:hover { /** CSS permettant d'aggrandir les liens présent dans le menu de naviguation lorsque la souris les survoles **/
+	color: goldenrod;
+	font-size: 33px;
+}
+#nav>ul{
+	color: gold;
+}
+#contenu{ /** id utilisé pour definir le style "du bloc du millieu" de toutes les pages **/
+
+background-color: #4C4949  ;
+display: block;
+position: relative;
+border-style: solid ;
+border-color: gold;
+border-width: 1px;
+color: white;
+font-size: 22px;
+margin-top: -30%;
+margin-left: 20%;
+padding-left: 2%;
+width: 74%;
+height: 60%;
+z-index: 0;
+}
+.img_comm{ /** classe utilisé dans les balise figcaption notament pour les sous-titres d'images **/
+
+font-size: 14px;
+color: gold;
+font-style: italic;
+padding-left: 35%;
+
+}
+h3{
+
+color: gold;
+margin-left: 40%;
+}
+.titre{
+	text-align:center;
+	font-size:35px;
+	font-weight:bolder;
+	margin-top : 10%
+}
+
+.soustitre{
+	text-align:left;
+	font-size:28px;
+	font-weight:bold
+}
+
+.corpsdetexte{
+	font-size:20px;
+	color: white
+}
+/** Style specialement pour l'index **/
+#logo /** id utilisé pour l'image "logo" dans l'index **/
+{
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 25%;
+	height: auto;
+}
+#liste_page{
+	list-style-type: '- ';
+	line-height: 38px;
+}
+#livre /** id utilisé pour l'image "livre" dans l'index **/
+{
+	display: block;
+	width: 38%;
+	padding-left: 27%;
+}
+#studio /** id utilisé pour l'image "studio" dans l'index **/
+{
+display: block;
+width: 40%;
+padding-left: 27%;
+
+}
+#films{ /** id utilisé pour l'image "films" dans l'index **/
+	display: block;
+	width: 40%;
+	padding-left: 27%;
+}
+.zoom{ /** classe utilisé dans les tableaux de navigations.**/
+	width: 80%;
+}
+.zoom:hover{ /** classe utilisé dans les tableaux de navigations agrandissant l'image lorsque la souris la survole. **/
+
+transform: scale(1.1);
+}
+
+/** _______________ **/
+
+
+
+/**CSS pour la page page personnage**/
+
+.portrait_perso{
+	display: block;
+	float: right;
+	margin: 1%;
+		margin-top : 10%
+}
+.tab_perso{
+	position: relative;
+	display: block;
+	text-align: center;
+	border-style: groove;
+	border-width: 5px;
+	margin-right: 3.2%;
+}
+
+.desc_perso{
+
+	font-size: 15px;
+	color: gold;
+	text-decoration: none;
+}
+
+.desc_perso:hover{
+	font-size: 18px;
+}
+a:link>#perso_H-P{
+	text-decoration: none;
+}
+/**CSS pour la page Films**/
+
+.img_film{
+	display: block;
+	float: right;
+	border-style: solid;
+	border-color: goldenrod;
+	border-width: 1px;
+	margin: 1%;
+	margin-top: 10%;
+	width: 12%;
+	z-index: 0;
+}
+/**CSS pour la page Livres**/
+.livre_zoom{
+	height: 300px;
+	width: 200px;
+}
+.livre_zoom:hover{
+
+transform: scale(1.1);
+}
+#tableau_livre1{
+	text-align: center;
+}
+#tableau_livre2{
+	margin-left: 9%;
+	text-align: center;
+}
+.livre_desc{
+	font-size: 14px;
+	text-decoration: none;
+}
+.livre_desc:hover{
+	font-size: 15px;
+}
+#tableau_livre{
+	border-style: groove;
+	border-width: 5px;
+	border-color: grey;
+	margin-right: 2%;
+}
+.img_livre{
+	display: block;
+	float: right;
+	border-style: solid;
+	border-color: goldenrod;
+	border-width: 1px;
+	margin: 1%;
+	margin-top: 8%;
+	height: 200px;
+	width: 150px;
+	z-index: 0;
+}
+
+
+/**CSS pour les pages Medias/Univers**/
+
+.medias_img{
+	height: 300;
+	width: 400px;
+}
+.tableau_medias{
+	text-align: center;
+	margin-left: 10%;
+}
+.medias_img:hover{
+	transform: scale(1.1);
+}
